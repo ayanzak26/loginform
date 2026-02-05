@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+<link rel="stylesheet" href="index.css">
+<body>
+    <div class="contanier" id="sing-up" style="display: none;">
+
+        <h1 class="form-title"> Register</h1>
+        <form method="post" action="register.php">
+
+            <div class="inputbox-group">
+                <i class="fas fa-user"></i>
+                <input type="text" name="fName" id="fName" placeholder="first name" required >
+                <label for="fName">First name</label>
+            </div>
+            <div class="inputbox-group">
+                <i class="fas fa-user"></i>
+                <input type="text" name="lName" id="lName" placeholder="Last name" required >
+                <label for="lName">Last name</label>
+            </div>
+            <div class="inputbox-group">
+                <i class="fas fa-envelope"></i>
+                <input type="text" name="email" id="email" placeholder="E-mail" required >
+                <label for="email">E-mail</label>
+            </div>
+            <div class="inputbox-group">
+                <i class="fas fa-lock"></i>
+                <input type="text" name="password" id="password" placeholder="Password" required >
+                <label for="password">Password</label>
+            </div>
+            <input type="submit" class="btn" value="sing-up" name="sing-up">
+
+        </form>
+        <p class="or">------------or---------------</p>
+        <div class="icons">
+            <i class="fab fa-google"></i>
+            <i class="fab fa-facebook"></i>
+        </div>
+        <div class="links">
+            <p>Already have Account ?</p>
+            <button id="singinbutton">Sing In</button>
+        </div>
+
+    </div>
+    <!------------------creat a sing in form-------------------->
+
+    <div class="contanier" id="sing-In">
+
+        <h1 class="form-title">Sing In</h1>
+        <form method="post" action="register.php">
+            <div class="inputbox-group">
+                <i class="fas fa-envelope"></i>
+                <input type="text" name="email" id="email" placeholder="E-mail" required >
+                <label for="email">E-mail</label>
+            </div>
+            <div class="inputbox-group">
+                <i class="fas fa-lock"></i>
+                <input type="text" name="password" id="password" placeholder="Password" required >
+                <label for="password">Password</label>
+            </div>
+            <p class="recover">
+                <a href="#">Recover Password</a>
+            </p>
+            <input type="submit" class="btn" value="sing-In" name="sing-In">
+
+        </form>
+        <p class="or">------------or---------------</p>
+        <div class="icons">
+            <i class="fab fa-google"></i>
+            <i class="fab fa-facebook"></i>
+        </div>
+        <div class="links">
+            <p>Don't have account yet ?</p>
+            <button id="singupButton">Sing up</button>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
