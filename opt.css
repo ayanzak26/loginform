@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.box{
+    height: 100%;
+    width: 100%;
+    background:lightgrey;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+button{
+    height: 60px;
+    width: 100px;
+    padding: 1vh;
+    border-radius: 10px;
+    
+
+}
